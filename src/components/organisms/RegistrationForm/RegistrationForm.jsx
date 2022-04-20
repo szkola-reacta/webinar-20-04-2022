@@ -100,7 +100,7 @@ function RegistrationForm() {
     // });
     const name = event.target.name; // name="email", name="password"
     const value = event.target.value; // checkbox: event.target.checked
-    console.log("name: ", name);
+    // console.log("name: ", name);
     setState({
       ...state,
       [name]: value // -> email, password, emailTest

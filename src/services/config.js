@@ -1,7 +1,7 @@
 const apiBaseUrl = "https://api.airtable.com/v0/YOUR_ID";
 
 export const apiConfig = {
-  postsList: `${apiBaseUrl}/posts?view=default`,
+  postsList: `${apiBaseUrl}/posts`,
   postsDetail: (id) => `${apiBaseUrl}/posts/${id}`,
 }
 

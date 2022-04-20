@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Start the mocking conditionally.
+if (process.env.REACT_APP_ENABLE_MSW === "1") {
+  const { worker } = require("./services/mocks/browser");
+  worker.start();
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
